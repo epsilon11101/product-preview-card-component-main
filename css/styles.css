@@ -11,16 +11,21 @@
         serif;
 }
 
+
 body{
     margin: 0 auto;
     background-color: var(--primary_cream);
     font-size: var(--font_size_paragraph);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
     
 }
 
 
 .card{
-    margin: 10px 10px;
     border-radius: 15px;
     background-color: var(--neutral-white);
     max-width: 380px;
@@ -104,4 +109,38 @@ body{
 .card button span{
     margin-right: 10px;
     font-size: 20px ;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media (min-width: 500px){
+    .card{
+        max-width: 640px;
+        margin-top: 20px;
+        flex-direction: row;
+    }
+    .card img {
+        width: 300px;
+        height: 100%;
+            border-top-right-radius: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+
+        }
+
+    .card .card-header {
+        margin-right: 20px;
+                }
+
+    .card button {
+        width: 100%;
+        }
+.card .card-body {
+    font-size: 15px;
+
+}
+
 }
