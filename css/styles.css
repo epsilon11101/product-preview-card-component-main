@@ -1,0 +1,107 @@
+:root{
+    --primary-dark_cyan:hsl(158, 36%, 37%);
+    --primary_cream:hsl(30, 38%, 92%);
+    --neutral-very_dark_blue:hsl(212, 21%, 14%);
+    --neutral-dark_grayish_blue:hsl(228, 12%, 48%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --font_size_paragraph: 15px;
+    --Montserrat:'Montserrat',
+        sans-serif;
+    --Fraunces:'Fraunces',
+        serif;
+}
+
+body{
+    margin: 0 auto;
+    background-color: var(--primary_cream);
+    font-size: var(--font_size_paragraph);
+    
+}
+
+
+.card{
+    margin: 10px 10px;
+    border-radius: 15px;
+    background-color: var(--neutral-white);
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .card-header{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items:flex-start;
+}
+
+.card .card-header h3{
+    font-weight: 100;
+    font-size: 12px;
+    font-family: var(--Fraunces);
+    letter-spacing: 5px;
+    color: var(--neutral-dark_grayish_blue);
+}
+.card .card-header h1{
+    font-size: 2.3rem;
+    font-family: var(--Fraunces);
+    font-weight:800;
+    color: black;
+}
+
+.card .card-header p{
+    color: var(--neutral-dark_grayish_blue);
+}
+.card .card-body{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+
+}
+
+.card .card-body p:nth-child(1){
+    font-size: 30px;
+    color: var(--primary-dark_cyan);
+    font-weight: 900;
+    font-family: var(--Fraunces);
+}
+
+.card .card-body p:nth-child(2) {
+    text-decoration: line-through;
+}
+
+.card .card-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card button{
+    background-color: var(--primary-dark_cyan);
+    color: var(--neutral-white);
+    font-family: var(--Montserrat);
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.card button span{
+    margin-right: 10px;
+    font-size: 20px ;
+}
